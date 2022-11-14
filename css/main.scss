@@ -1,0 +1,56 @@
+@use "./global/mixins" as *;
+@use "./global/glopal\ rules"as *;
+
+%sampleButton{
+  padding:10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $mainColor;
+  cursor: pointer;
+  opacity:.8;
+  transition: .4s ease-in-out;
+  &:hover{
+      opacity:1;
+  }
+}
+//Grid System
+.container{
+  max-width: 1200px;
+  margin: auto;
+  @include prefixer(box-sizing, content-box);
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+%_3CardsSystem{
+  display: grid;
+  margin-top: 50px;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(200px, 380px));
+@include media(Tablet){
+  grid-template-columns: repeat(2, minmax(200px, 380px));
+}
+@include media(mobile){
+  grid-template-columns: 1fr;
+}
+}
+%_4CardsSystem{
+  display: grid;
+  margin-top: 50px;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(150px, 300px));
+  @include media(Tablet){
+  grid-template-columns: repeat(2, minmax(200px, 350px));
+}  
+@include media(mobile){
+  grid-template-columns: 1fr;
+}  
+}
+* {
+  @include prefixer(box-sizing, border-box);
+  text-decoration: none;
+  line-height: 1.7;
+  text-transform: capitalize;
+}
