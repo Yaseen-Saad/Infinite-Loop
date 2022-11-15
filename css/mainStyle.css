@@ -338,7 +338,6 @@ body {
 
 .contact {
   width: 100%;
-  height: 100vh;
   padding: 100px 0px;
   background: url(../images/infinite-loop-03.jpg);
 }
@@ -364,15 +363,23 @@ body {
 }
 @media (max-width: 1080px) {
   .contact .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .contact .container input {
   display: block;
 }
 .contact .container form {
+  width: 70%;
+  outline: none;
   margin: 0px auto;
   margin-top: 60px;
+}
+@media (max-width: 1080px) {
+  .contact .container form {
+    width: 90%;
+    margin: 60px 0px;
+  }
 }
 .contact .container form input {
   height: 60px;
@@ -385,6 +392,11 @@ body {
   color: white;
   margin: 20px 0px;
 }
+@media (max-width: 1080px) {
+  .contact .container form input {
+    width: 100%;
+  }
+}
 .contact .container form textarea {
   width: 80%;
   background: transparent;
@@ -394,8 +406,18 @@ body {
   font-size: 30px;
   color: #fff;
 }
+@media (max-width: 1080px) {
+  .contact .container form textarea {
+    width: 100%;
+  }
+}
 .contact .container .rside {
   margin-top: 60px;
+}
+@media (max-width: 1080px) {
+  .contact .container .rside {
+    width: 100%;
+  }
 }
 .contact .container .rside .contac {
   text-align: center;
@@ -404,15 +426,26 @@ body {
   justify-content: center;
 }
 .contact .container .rside .contac .icon {
-  width: 40%;
-  font-size: 40px;
+  width: 30%;
+  font-size: 35px;
   color: white;
   margin-right: 20px;
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .contact .container .rside .contac .icon {
+    font-size: 30px;
+  }
+}
 .contact .container .rside .contac h3 {
-  font-size: 40px;
+  width: 70%;
+  font-size: 35px;
   color: white;
+}
+@media (max-width: 767px) {
+  .contact .container .rside .contac h3 {
+    font-size: 26px;
+  }
 }
 
 :root {

@@ -1,6 +1,5 @@
 .contact {
   width: 100%;
-  height: 100vh;
   padding: 100px 0px;
   background: url(../images/infinite-loop-03.jpg);
   .head {
@@ -23,12 +22,18 @@
     align-items: center;
     justify-content: space-evenly;
     @media(max-width: 1080px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     input {
       display: block; 
     }
     form {
+      width: 70%;
+      @media(max-width: 1080px){ 
+        width: 90%;
+        margin: 60px 0px;
+      }
+      outline: none;
       margin: 0px auto;
       margin-top: 60px;
       input {
@@ -41,8 +46,14 @@
         border: 2px solid white;
         color: white;
         margin: 20px 0px;
+        @media(max-width: 1080px){ 
+          width: 100%;
+        }
       }
       textarea {
+        @media(max-width: 1080px){ 
+          width: 100%;
+        }
         width: 80%;
         background: transparent;
         border: 2px solid #fff;
@@ -54,21 +65,31 @@
     }
     .rside {
       margin-top: 60px;
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
       .contac {
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         .icon {
-          width: 40%;
-          font-size: 40px;
+          width: 30%;
+          font-size: 35px;
           color: white;
           margin-right: 20px;
           margin-top: 30px;
+          @media(max-width: 767px) {
+            font-size: 30px;
+          }
         }
         h3 {
-          font-size: 40px;
+          width: 70%;
+          font-size: 35px;
           color: white ;
+          @media(max-width: 767px) {
+            font-size: 26px;
+          }
         }
       }
     }
