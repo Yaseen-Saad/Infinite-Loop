@@ -41,7 +41,7 @@ currtransform = 0,
 itemWidth=0;
 nexts = 0;
 function next(){      
-        if (nexts % 5 == 0 ) {
+        if (nexts % 4 == 0 ) {
             cloned.map(ele => slider.append(ele))
             cloned =Array.from(items.map(ele=>ele.cloneNode(true)))
 }
