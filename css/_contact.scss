@@ -1,0 +1,76 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0px;
+  background: url(../images/infinite-loop-03.jpg);
+  .head {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    h2 {
+      color: white;
+      font-size: 60px;
+    }
+    p {
+      color: white;
+      font-size: 20px;
+    }
+  }
+  .container {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @media(max-width: 1080px) {
+      flex-direction: column;
+    }
+    input {
+      display: block; 
+    }
+    form {
+      margin: 0px auto;
+      margin-top: 60px;
+      input {
+        height: 60px;
+        border-radius: 8px;
+        width: 80%;
+        font-size: 30px;
+        padding: 10px 9px;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        margin: 20px 0px;
+      }
+      textarea {
+        width: 80%;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 6px;
+        padding: 4px 9px;
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+    .rside {
+      margin-top: 60px;
+      .contac {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          width: 40%;
+          font-size: 40px;
+          color: white;
+          margin-right: 20px;
+          margin-top: 30px;
+        }
+        h3 {
+          font-size: 40px;
+          color: white ;
+        }
+      }
+    }
+  }
+}

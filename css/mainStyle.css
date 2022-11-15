@@ -238,6 +238,183 @@ body {
   background-color: rgb(62, 117, 172);
 }
 
+.about-sec {
+  width: 100%;
+  background: url(../images/infinite-loop-02.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+}
+@media (max-width: 767px) {
+  .about-sec {
+    padding: 100px 0px;
+  }
+}
+.about-sec .container {
+  width: 80%;
+  margin: 0px auto;
+}
+@media (max-width: 767px) {
+  .about-sec .container {
+    width: 100%;
+  }
+}
+.about-sec .head {
+  text-align: center;
+}
+.about-sec .head h3 {
+  font-size: 60px;
+  color: white;
+}
+.about-sec .head p {
+  font-size: 24px;
+  color: #fff;
+}
+.about-sec .cards {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  text-align: center;
+}
+.about-sec .cards .card {
+  padding: 10px 0px;
+  width: 300px;
+  height: 400px;
+  margin: 0px auto;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+.about-sec .cards .card .img {
+  margin: 0px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+@media (max-width: 484px) {
+  .about-sec .cards .card .img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.about-sec .cards .card .img img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 484px) {
+  .about-sec .cards .card {
+    width: 250px;
+  }
+}
+@media (max-width: 363px) {
+  .about-sec .cards .card {
+    width: 200px;
+  }
+}
+@media (max-width: 484px) {
+  .about-sec .cards .card {
+    height: 300px;
+  }
+}
+.about-sec .cards .card p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 1.3;
+}
+@media (max-width: 484px) {
+  .about-sec .cards .card p {
+    font-size: 18px;
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0px;
+  background: url(../images/infinite-loop-03.jpg);
+}
+.contact .head {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.contact .head h2 {
+  color: white;
+  font-size: 60px;
+}
+.contact .head p {
+  color: white;
+  font-size: 20px;
+}
+.contact .container {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 1080px) {
+  .contact .container {
+    flex-direction: column;
+  }
+}
+.contact .container input {
+  display: block;
+}
+.contact .container form {
+  margin: 0px auto;
+  margin-top: 60px;
+}
+.contact .container form input {
+  height: 60px;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 30px;
+  padding: 10px 9px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  margin: 20px 0px;
+}
+.contact .container form textarea {
+  width: 80%;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 4px 9px;
+  font-size: 30px;
+  color: #fff;
+}
+.contact .container .rside {
+  margin-top: 60px;
+}
+.contact .container .rside .contac {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .container .rside .contac .icon {
+  width: 40%;
+  font-size: 40px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.contact .container .rside .contac h3 {
+  font-size: 40px;
+  color: white;
+}
+
 :root {
   --mainPadding:5%;
   --mainColor:#357;
@@ -268,11 +445,13 @@ body {
   position: absolute;
   bottom: 10%;
   left: 50%;
-  padding: 20px 60px;
+  padding: 20px 30px;
+  border-radius: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   background-color: var(--mainColor);
 }
 #Home span svg {
   color: var(--secColor) !important;
+  transition: 0.4s;
 }/*# sourceMappingURL=mainStyle.css.map */

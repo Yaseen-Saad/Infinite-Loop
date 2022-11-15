@@ -76,8 +76,8 @@ li{
 background-color: var(--mainColor);
     }
     &.scrolled:hover{
-background-color: var(--mainColor) !important;
-color: var(--secColor);
+    background-color: var(--mainColor) !important;  
+    color: var(--secColor);
 
     }
 a{

@@ -31,11 +31,11 @@
 </head>
 <body>
 <nav>
-    <p>
-        Infinite Loop
-    </p>
+    <p> Infinite Loop   </p>
     <div class="toggler">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
     <ul></ul>
 </nav>
@@ -43,10 +43,10 @@
     <h1>Infinite Loop</h1>
     <p>Pure Sass / Scss Theme</p>
     <p>Template Developed By Young professionals</p>
-<span><a href="#What-We-Do"><i class="fas fa-2x fa-arrow-down tm-down-arrow"></i></a></span>
+<span><a href="#What-We-Do"><i class="fas fa-arrow-down tm-down-arrow"></i></a></span>
 </section>
 <section class="w-w-d" id="What-We-Do">
-         <div class="container-w">
+        <div class="container-w">
             <div class="head-w">
                 <h2>What We Do</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde, quisquam natus, ea excepturi aut corrupti sint ratione necessitatibus voluptatibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam maxime </p>
@@ -87,17 +87,42 @@
             </div>
         </div>
 </section>
-<section id="About-US">
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
+<section class="about-sec" id="About-US">
+    <div class="container">
+    <div class="head">
+    <h3>About Us</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius similique voluptas rem neque hic. Illo quibusdam porro debitis, similique nisi ipsa, </p>
+    </div>
+    <div class="cards">
+    <div class="card">
+        <div class="img">
+            <img src="./images/testimonial-img-03.jpg" alt="">
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti dolorum minus fuga </p>
+            <span></span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="./images/testimonial-img-03.jpg" alt="">
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti dolorum minus fuga </p>
+            <span></span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="./images/testimonial-img-03.jpg" alt="">
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti dolorum minus fuga </p>
+            <span></span>
+        </div>
+    </div>
+    </div>
+</div>
 </section>
 <section id="Gallery">
     <h2>gallary</h2>
@@ -134,18 +159,45 @@
     <span></span>
     <span></span>
     </article>   
-                                                                                    <section id="Contact">
-        <p>contact</p>
-        <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-                                                                            </section>
+    <section class="contact" id="Contact">
+        <div class="head">
+            <h2>Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo, reprehenderit eveniet, aspernatur,.</p>
+        </div>
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea type="text" placeholder="Message" rows = "8"></textarea>
+            </form>
+            <div class="rside">
+                <div class="contac">
+                    <div class="icon">
+                        <i class="far fa-2x fa-comment mr-4"></i>
+                    </div>
+                    <h3>Chat Online</h3>
+                </div>
+                <div class="contac">
+                    <div class="icon">
+                    <i class ='far fa-2x fa-envelope mr-4'></i>
+                </div>
+                    <h3>mail@company.com</h3>
+                </div>
+                <div class="contac">
+                    <div class="icon">
+                        <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                </div>
+                <div class="contac">
+                    <div class="icon">
+                    <i class="fas fa-2x fa-phone-square mr-4"></i>
+                </div>
+                    <h3>255-662-5566</h3>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         let slider = document.querySelector('section >article#gallary-slider'),
             items =  Array.from(slider.children),
@@ -158,7 +210,7 @@
             if (nexts % 6 == 0) {
             cloned.map(ele => slider.append(ele))
                 cloned =Array.from(items.map(ele=>ele.cloneNode(true)))
-        }
+            }
             nexts++
             nexteles = Array.from(slider.children).filter(ele => ele.tagName != 'SPAN')
             for (let i = 0; i < nexteles.length; i++) {
@@ -173,19 +225,6 @@
         }, 3000);
             </script>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- JQuery -->
     <script type="text/javascript" src="jQuery/jQuery.min.js"></script>
     <!-- Owl Carousel JS -->
