@@ -32,7 +32,40 @@ toggler.onclick = ()=>{
     navUl.classList.toggle('active')
     toggler.classList.toggle('active')
 }
-// End Dynamic Nav
+// Slider
+
+let slider = document.querySelector('section article#gallary-slider'),
+items = Array.from(slider.children),
+cloned =Array.from(items.map(ele=>ele.cloneNode(true))),
+currtransform = 0,
+itemWidth=0;
+nexts = 0;
+function next(){      
+        if (nexts % 5 == 0 ) {
+            cloned.map(ele => slider.append(ele))
+            cloned =Array.from(items.map(ele=>ele.cloneNode(true)))
+}
+nexts++
+nexteles = Array.from(slider.children)
+for (let i = 0; i < nexteles.length; i++) {
+    const ele = nexteles[i];
+    itemWidth =ele.clientWidth
+    ele.style.transform = `translateX(-${itemWidth+ currtransform}px)`
+}
+currtransform+= itemWidth
+}
+mouse = true;
+slider.onmouseenter  = ()=>{
+mouse = false
+}
+slider.onmouseleave  = ()=>{
+mouse = true
+}
+setInterval(() => {
+if(mouse){
+    next()
+}
+}, 3000);
 
 
 

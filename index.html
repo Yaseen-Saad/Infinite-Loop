@@ -1,198 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>
-        Project
-    </title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-    <link rel="stylesheet" href="fontawsome/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+    />
+    <link rel="stylesheet" href="fontawsome/all.min.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <!-- google fonts -->
 
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.defult.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.defult.min.css" />
     <!-- BootStrap CSS -->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <!-- Normalize css -->
-    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="normalize/normalize.css" />
     <!-- Style Css -->
-    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/mainStyle.css" />
     <!-- Nav Style -->
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/nav.css" />
     <!-- Home Style -->
-    <link rel="stylesheet" href="css/homeStyle.css">
-</head>
-<body>
-<nav>
-    <p>
-        Infinite Loop
-    </p>
-    <div class="toggler">
-        <span></span><span></span><span></span>
-    </div>
-    <ul></ul>
-</nav>
-<section id="Home">
-    <h1>Infinite Loop</h1>
-    <p>Pure Sass / Scss Theme</p>
-    <p>Template Developed By Young professionals</p>
-<span><a href="#What-We-Do"><i class="fas fa-2x fa-arrow-down tm-down-arrow"></i></a></span>
-</section>
-<section id="What-We-Do">
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-    <p>what we do</p>
-</section>
-<section id="About-US">
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-    <p>about us</p>
-</section>
-<section id="Gallery">
-    <h2>gallary</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum molestiae a, quis eligendi, praesentium autem ut dolor numquam architecto, aliquam cupiditate in. Tempora, dolor magnam tenetur delectus ipsum eligendi!</p>
-    <br />
-    <style>
-        #Gallery div{
-            position: relative;
-            overflow: visible;
-            }
-#gallary-slider{
-        font-size: 0px;
-        width:max-content;
-    }
-    #gallary-slider div {
-    width: 200px;
-    display: inline-block;
-    height: 300px;
-    padding-inline: 15px;
-    overflow: hidden;
-}
-#gallary-slider img{
-    width:100%;  
-}
-#gallary-slider span{
-    position: absolute;
-    display: inline-block;
-    width: 60px;
-    height: 100px;
-    cursor: pointer;
-    overflow: visible;
-    top:50%;
-    transform: translateY(-50%);
-    color: var(--mainColor);
-    font-size: 2rem;
-}
-#gallary-slider span:first-of-type{
-    left:30px;
-}
-#gallary-slider span:last-of-type{
-    right:30px;  
-}
-    </style>
-    <div>
-        <article id="gallary-slider">
-        
-
-        <div><img src="./images/gallery-img-01.jpg" alt=""></div>
-        <div><img src="./images/gallery-img-02.jpg" alt=""></div>
-        <div><img src="./images/gallery-img-03.jpg" alt=""></div>
-        <div><img src="./images/gallery-img-04.jpg" alt=""></div>
-        <div><img src="./images/gallery-img-05.jpg" alt=""></div>
-        <div><img src="./images/gallery-img-06.jpg" alt=""></div> 
-</article>   
-</div>
-                                                                                    <section id="Contact">
-        <p>contact</p>
-        <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-    <p>contact</p>
-                                                                            </section>
-    <script>
-        let slider = document.querySelector('section article#gallary-slider'),
-            items = Array.from(slider.children),
-            cloned =Array.from(items.map(ele=>ele.cloneNode(true))),
-            currtransform = 0,
-            itemWidth=0;
-            nexts = 0;
-            function next(){      
-                    if (nexts % 5 == 0 ) {
-                        cloned.map(ele => slider.append(ele))
-                        cloned =Array.from(items.map(ele=>ele.cloneNode(true)))
-        }
-            nexts++
-            nexteles = Array.from(slider.children)
-            for (let i = 0; i < nexteles.length; i++) {
-                const ele = nexteles[i];
-                itemWidth =ele.clientWidth
-                ele.style.transform = `translateX(-${itemWidth+ currtransform}px)`
-            }
-            currtransform+= itemWidth
-        }
-    mouse = true;
-    slider.onmouseenter  = ()=>{
-        mouse = false
-    }
-        slider.onmouseleave  = ()=>{
-            mouse = true
-        }
-    setInterval(() => {
-            if(mouse){
-                next()
-            }
-            }, 3000);
-        </script>
+    <link rel="stylesheet" href="css/homeStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <p>Infinite Loop</p>
+      <div class="toggler"><span></span><span></span><span></span></div>
+      <ul></ul>
+    </nav>
+    <section id="Home">
+      <h1>Infinite Loop</h1>
+      <p>Pure Sass / Scss Theme</p>
+      <p>Template Developed By Young professionals</p>
+      <span
+        ><a href="#What-We-Do"
+          ><i class="fas fa-2x fa-arrow-down tm-down-arrow"></i></a
+      ></span>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
+    <section id="What-We-Do">
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+      <p>what we do</p>
+    </section>
+    <section id="About-US">
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+      <p>about us</p>
+    </section>
+    <section id="Gallery">
+      <h2>gallary</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        laborum molestiae a, quis eligendi, praesentium autem ut dolor numquam
+        architecto, aliquam cupiditate in. Tempora, dolor magnam tenetur
+        delectus ipsum eligendi!
+      </p>
+      <div>
+        <article id="gallary-slider">
+          <div><img src="./images/gallery-img-01.jpg" alt="" /></div>
+          <div><img src="./images/gallery-img-02.jpg" alt="" /></div>
+          <div><img src="./images/gallery-img-03.jpg" alt="" /></div>
+          <div><img src="./images/gallery-img-04.jpg" alt="" /></div>
+          <div><img src="./images/gallery-img-05.jpg" alt="" /></div>
+          <div><img src="./images/gallery-img-06.jpg" alt="" /></div>
+        </article>
+      </div>
+      <section id="Contact">
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+        <p>contact</p>
+      </section>
+    </section>
 
     <!-- JQuery -->
     <script type="text/javascript" src="jQuery/jQuery.min.js"></script>
     <!-- Owl Carousel JS -->
-    <script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
-   <!-- BootStrap -->
+    <script
+      type="text/javascript"
+      src="owlcarousel/owl.carousel.min.js"
+    ></script>
+    <!-- BootStrap -->
     <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap/bootstrap.min.css"></script>
     <!-- fontawesome JS -->
     <script type="text/javascript" src="fontawsome/all.min.js"></script>
     <!-- JS -->
     <script type="text/javascript" src="Js/main.js"></script>
-</body>
+  </body>
 </html>
