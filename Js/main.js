@@ -2,7 +2,8 @@
 let sections = Array.from(document.querySelectorAll("body > section")).map(ele=> ele.id)
 let navUl = document.querySelector('nav ul');
 let toggler = document.querySelector('nav .toggler')
-for(section of sections){
+
+for (section of sections) {
 let navElements = document.createElement("li")
 let navlinks = document.createElement("a")
 navlinks.href = `#${section}`
@@ -14,6 +15,7 @@ document.querySelector('nav ul').appendChild(navElements)
 }
 let nav = navUl.parentNode
 let navElements = document.querySelectorAll('nav ul li')
+
 onscroll = ()=>{
 if(scrollY > 50){
     nav.style.backgroundColor = "var(--secColor)"
@@ -32,40 +34,7 @@ toggler.onclick = ()=>{
     navUl.classList.toggle('active')
     toggler.classList.toggle('active')
 }
-// Slider
-
-let slider = document.querySelector('section article#gallary-slider'),
-items = Array.from(slider.children),
-cloned =Array.from(items.map(ele=>ele.cloneNode(true))),
-currtransform = 0,
-itemWidth=0;
-nexts = 0;
-function next(){      
-        if (nexts % 4 == 0 ) {
-            cloned.map(ele => slider.append(ele))
-            cloned =Array.from(items.map(ele=>ele.cloneNode(true)))
-}
-nexts++
-nexteles = Array.from(slider.children)
-for (let i = 0; i < nexteles.length; i++) {
-    const ele = nexteles[i];
-    itemWidth =ele.clientWidth
-    ele.style.transform = `translateX(-${itemWidth+ currtransform}px)`
-}
-currtransform+= itemWidth
-}
-mouse = true;
-slider.onmouseenter  = ()=>{
-mouse = false
-}
-slider.onmouseleave  = ()=>{
-mouse = true
-}
-setInterval(() => {
-if(mouse){
-    next()
-}
-}, 3000);
+// End Dynamic Nav
 
 
 

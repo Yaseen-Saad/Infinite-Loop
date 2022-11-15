@@ -11,9 +11,8 @@ nav{
     padding-inline: var(--mainPadding);
     color:var(--secColor);
     p{
-
-     font-size: 2rem;
-     letter-spacing: 4px;
+    font-size: 2rem;
+    letter-spacing: 4px;
     }
     .toggler{
         display:none;
@@ -118,15 +117,15 @@ a{
             -o-transition: .6s ease-in-out !important;
 }
         &:hover{
-background-color: var(--mainColor) !important;
-color: var(--secColor) !important;
-         a{
+            background-color: var(--mainColor) !important;
+            color: var(--secColor) !important;
+        a{
                 transform: translateX(10px);
                 -webkit-transform: translateX(10px);
                 -moz-transform: translateX(10px);
                 -ms-transform: translateX(10px);
                 -o-transform: translateX(10px);
-         }}
+        }}
     }
 }
 &.active{
