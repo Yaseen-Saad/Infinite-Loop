@@ -9,7 +9,12 @@
 
 
 *To Clone The Repo :*
-`git pull origin main`\n
-`git add .`\n
-`git commit -m "Your message"`\n
-`git push origin main`\n
+
+
+`git pull origin main`
+
+`git add .`
+
+`git commit -m "Your message"`
+
+`git push origin main`
