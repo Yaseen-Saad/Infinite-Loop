@@ -32,3 +32,7 @@ toggler.onclick = ()=>{
     navUl.classList.toggle('active')
     toggler.classList.toggle('active')
 }
+// End Dynamic Nav
+
+
+
