@@ -1,12 +1,13 @@
 // Dynaimc Nav
-let sections = Array.from(document.querySelectorAll("body > section")).map(ele=> ele.id.split("-").join(" "))
+let sections = Array.from(document.querySelectorAll("body > section")).map(ele=> ele.id)
 let navUl = document.querySelector('nav ul');
 let toggler = document.querySelector('nav .toggler')
 for(section of sections){
 let navElements = document.createElement("li")
 let navlinks = document.createElement("a")
 navlinks.href = `#${section}`
-navlinks.innerText = section
+navElements.onclick = ()=>navlinks.click()
+navlinks.innerText = section.split("-").join(" ")
 navElements.style.width = navUl.clientWidth / sections.length
 navElements.append(navlinks)
 document.querySelector('nav ul').appendChild(navElements)

@@ -39,6 +39,31 @@ nav .toggler {
   }
 }
 
+nav .toggler.active span:nth-child(2) {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  opacity: 0;
+}
+
+nav .toggler.active :first-child {
+  transform: translate(-5px, 20px) rotate(-45deg);
+  -webkit-transform: translate(-5px, 20px) rotate(-45deg);
+  -moz-transform: translate(-5px, 20px) rotate(-45deg);
+  -ms-transform: translate(-5px, 20px) rotate(-45deg);
+  -o-transform: translate(-5px, 20px) rotate(-45deg);
+}
+
+nav .toggler.active :last-child {
+  transform: translate(-2px, -30px) rotate(45deg);
+  -webkit-transform: translate(-2px, -30px) rotate(45deg);
+  -moz-transform: translate(-2px, -30px) rotate(45deg);
+  -ms-transform: translate(-2px, -30px) rotate(45deg);
+  -o-transform: translate(-2px, -30px) rotate(45deg);
+}
+
 ul {
   margin: 0;
   padding: 0;
