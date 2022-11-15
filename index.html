@@ -121,8 +121,6 @@
         <div><img src="./images/gallery-img-04.jpg" alt=""></div>
         <div><img src="./images/gallery-img-05.jpg" alt=""></div>
         <div><img src="./images/gallery-img-06.jpg" alt=""></div> 
-    <span><i class="fas fa-2x fa-arrow-left tm-left-arrow"></i></span>
-    <span><i class="fas fa-2x fa-arrow-right tm-right-arrow"></i></span>
 </article>   
 </div>
                                                                                     <section id="Contact">
@@ -144,14 +142,13 @@
             currtransform = 0,
             itemWidth=0;
             nexts = 0;
-            items = items.filter(ele => ele.tagName != "SPAN")
             function next(){      
                     if (nexts % +items.length == 0) {
                         cloned.map(ele => slider.append(ele))
                         cloned =Array.from(items.map(ele=>ele.cloneNode(true)))
         }
             nexts++
-            nexteles = Array.from(slider.children).filter(ele => ele.tagName != 'SPAN')
+            nexteles = Array.from(slider.children)
             for (let i = 0; i < nexteles.length; i++) {
                 const ele = nexteles[i];
                 itemWidth =ele.clientWidth
