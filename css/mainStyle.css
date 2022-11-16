@@ -71,7 +71,7 @@ ul li {
   text-align: center;
   width: -moz-available;
   width: fill-available;
-  padding: 7px;
+  padding: 10px 4px;
   cursor: pointer;
   width: -webkit-fill-available;
 }
