@@ -17,8 +17,8 @@ nav p {
 }
 nav .toggler {
   display: none;
-  width: 80px;
-  height: 60px;
+  width: 40px;
+  height: 30px;
   cursor: pointer;
 }
 @media (max-width: 880px) {
@@ -44,18 +44,18 @@ nav .toggler.active span:nth-child(2) {
   opacity: 0;
 }
 nav .toggler.active :first-child {
-  transform: translate(-5px, 20px) rotate(-45deg);
-  -webkit-transform: translate(-5px, 20px) rotate(-45deg);
-  -moz-transform: translate(-5px, 20px) rotate(-45deg);
-  -ms-transform: translate(-5px, 20px) rotate(-45deg);
-  -o-transform: translate(-5px, 20px) rotate(-45deg);
+  transform: translate(-2px, 17px) rotate(-45deg);
+  -webkit-transform: translate(-2px, 17px) rotate(-45deg);
+  -moz-transform: translate(-2px, 17px) rotate(-45deg);
+  -ms-transform: translate(-2px, 17px) rotate(-45deg);
+  -o-transform: translate(-2px, 17px) rotate(-45deg);
 }
 nav .toggler.active :last-child {
-  transform: translate(-2px, -30px) rotate(45deg);
-  -webkit-transform: translate(-2px, -30px) rotate(45deg);
-  -moz-transform: translate(-2px, -30px) rotate(45deg);
-  -ms-transform: translate(-2px, -30px) rotate(45deg);
-  -o-transform: translate(-2px, -30px) rotate(45deg);
+  transform: translate(-2px, -9px) rotate(45deg) rotate(45deg);
+  -webkit-transform: translate(-2px, -9px) rotate(45deg);
+  -moz-transform: translate(-2px, -9px) rotate(45deg);
+  -ms-transform: translate(-2px, -9px) rotate(45deg);
+  -o-transform: translate(-2px, -9px) rotate(45deg);
 }
 
 ul {
@@ -143,7 +143,7 @@ body {
   overflow: hidden;
   font-family: "";
   width: 100%;
-  padding: 50PX 20PX;
+  padding: 100px 20px;
 }
 @media (max-width: 1080px) {
   .w-w-d .head-w {
@@ -241,6 +241,7 @@ body {
 .about-sec {
   width: 100%;
   background: url(../images/infinite-loop-02.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -339,7 +340,11 @@ body {
 .contact {
   width: 100%;
   padding: 100px 0px;
-  background: url(../images/infinite-loop-03.jpg);
+  background-image: url(../images/infinite-loop-03.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .contact .head {
   width: 80%;
@@ -368,6 +373,9 @@ body {
 }
 .contact .container input {
   display: block;
+}
+.contact .container input:focus {
+  outline: none;
 }
 .contact .container form {
   width: 70%;
@@ -399,6 +407,7 @@ body {
 }
 .contact .container form textarea {
   width: 80%;
+  min-height: 100px;
   background: transparent;
   border: 2px solid #fff;
   border-radius: 6px;
@@ -410,6 +419,9 @@ body {
   .contact .container form textarea {
     width: 100%;
   }
+}
+.contact .container form textarea:focus {
+  outline: none;
 }
 .contact .container .rside {
   margin-top: 60px;
@@ -449,9 +461,9 @@ body {
 }
 
 :root {
-  --mainPadding:5%;
-  --mainColor:#357;
-  --secColor:#fff;
+  --mainPadding: 5%;
+  --mainColor: #357;
+  --secColor: #fff;
 }
 
 #Home {
@@ -469,6 +481,7 @@ body {
   background-repeat: no-repeat;
   font-size: 2rem;
   background-image: url(../images/infinite-loop-01.jpg);
+  text-align: center;
 }
 #Home h1 {
   font-size: 5rem;
@@ -487,4 +500,53 @@ body {
 #Home span svg {
   color: var(--secColor) !important;
   transition: 0.4s;
+}
+@media (max-width: 720px) {
+  #Home h1 {
+    font-size: 3rem;
+  }
+  #Home p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  #Home span {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+#Gallery {
+  padding: 80px 20px;
+}
+#Gallery h2 {
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+  color: var(--mainColor);
+}
+#Gallery p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-size: 1.4rem;
+}
+#Gallery #gallary-slider {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 0px;
+}
+#Gallery #gallary-slider div {
+  width: 300px;
+  display: inline-block;
+  height: 400px;
+  padding-inline: 15px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  overflow: hidden;
+}
+#Gallery #gallary-slider span {
+  position: absolute;
 }/*# sourceMappingURL=mainStyle.css.map */

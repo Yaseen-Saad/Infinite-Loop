@@ -1,7 +1,11 @@
 .contact {
   width: 100%;
   padding: 100px 0px;
-  background: url(../images/infinite-loop-03.jpg);
+  background-image: url(../images/infinite-loop-03.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   .head {
     width: 80%;
     margin: 0px auto;
@@ -21,15 +25,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    @media(max-width: 1080px) {
+    @media (max-width: 1080px) {
       flex-direction: column-reverse;
     }
     input {
-      display: block; 
+      display: block;
+      &:focus {
+        outline: none;
+      }
     }
     form {
       width: 70%;
-      @media(max-width: 1080px){ 
+      @media (max-width: 1080px) {
         width: 90%;
         margin: 60px 0px;
       }
@@ -46,15 +53,19 @@
         border: 2px solid white;
         color: white;
         margin: 20px 0px;
-        @media(max-width: 1080px){ 
+        @media (max-width: 1080px) {
           width: 100%;
         }
       }
       textarea {
-        @media(max-width: 1080px){ 
+        @media (max-width: 1080px) {
           width: 100%;
         }
+        &:focus {
+          outline: none;
+        }
         width: 80%;
+        min-height: 100px;
         background: transparent;
         border: 2px solid #fff;
         border-radius: 6px;
@@ -79,15 +90,15 @@
           color: white;
           margin-right: 20px;
           margin-top: 30px;
-          @media(max-width: 767px) {
+          @media (max-width: 767px) {
             font-size: 30px;
           }
         }
         h3 {
           width: 70%;
           font-size: 35px;
-          color: white ;
-          @media(max-width: 767px) {
+          color: white;
+          @media (max-width: 767px) {
             font-size: 26px;
           }
         }
