@@ -64,7 +64,7 @@ function next() {
   }
   currtransform += itemWidth;
 }
-let intt = setInterval(next, 3000);
+let intt = setInterval(next, 1500);
 
 slider.onmouseenter = ()=> clearInterval(intt)
 slider.onmouseleave = ()=> intt = setInterval(next, 3000);
