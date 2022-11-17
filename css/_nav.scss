@@ -99,6 +99,7 @@ a{
     color: inherit;
 }
 }
+
 @media (max-width: 880px) {
     flex-direction: column;
     position: absolute;
@@ -111,6 +112,9 @@ a{
         color: var(--mainColor) !important;
         width: 100% !important;
         padding-inline: 0;
+        &.active {
+            color: #fff !important;
+        }
         a{
             margin-left: 10px;
             display: inline-block;

@@ -114,6 +114,9 @@ ul li a:hover {
     width: 100% !important;
     padding-inline: 0;
   }
+  ul li.active {
+    color: #fff !important;
+  }
   ul li a {
     margin-left: 10px;
     display: inline-block;
