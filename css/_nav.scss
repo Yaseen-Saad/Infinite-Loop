@@ -75,6 +75,10 @@ text-align: center;
         color: inherit;
 background-color: var(--mainColor);
     }
+    &.active {
+        color: #fff;
+        background-color: var(--mainColor); 
+    }
     &.scrolled:hover{
     background-color: var(--mainColor) !important;  
     color: var(--secColor);

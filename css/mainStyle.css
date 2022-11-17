@@ -79,6 +79,10 @@ ul li:hover {
   color: inherit;
   background-color: var(--mainColor);
 }
+ul li.active {
+  color: #fff;
+  background-color: var(--mainColor);
+}
 ul li.scrolled:hover {
   background-color: var(--mainColor) !important;
   color: var(--secColor);
